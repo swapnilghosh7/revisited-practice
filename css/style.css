@@ -1,0 +1,356 @@
+body{
+    /*for making body in center*/
+    margin: 0 auto;
+    /*width is 100% for any page*/
+    width:100%;
+    /*Font family is sans-serif i.e. no edges on font corner */
+    font-family: sans-serif;
+}
+/*header*/
+
+.logo_img{
+    width: 150px;
+    height: 40px;
+    /*for setting margin*/
+    margin: 15px;
+    
+}
+
+.header_section{
+    /*width of header section is 100%*/
+    width:100%;
+    
+    background-color: rgb(25,30,62);
+    /*constant height of header section*/
+    height: 70px;
+}
+
+
+
+
+.resource{
+    /*changing the position of whole resource div which contain icon*/
+    float: right;
+    /* setting margin for making it vertically center*/
+    margin:15px;
+   }
+.box{
+    /*all the small divs containing all text and icon which are block elements. To make them inline we use float left. we use float left because we want to make all divs from left to right so this is the right way. we can use float right because containing div is small but if we use float right the div will become in reverse order*/
+    float: left; 
+    /*for adding some space arround content not div*/
+    padding-left: 10px;
+    
+    padding-right: 10px;
+    
+    font-size: 10px;
+    text-align: center;
+    height: 40px;
+    border-left: 2px solid rgb(47,52,82);
+    
+}
+/* for making right border of 4th div*/
+.box:nth-child(4){
+    border-right: 2px solid rgb(47,52,82);
+    
+}
+/* > this sign is a immedieate child selector which select its immediate children*/
+.box>a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+/* HEADER SECTION */
+
+.about{
+    height:70px;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: white;
+
+  
+}
+
+.about a{
+    text-decoration: none;
+    font-size: 80%;
+}
+.about>ul {
+    height: 40px;
+    list-style-type: none;
+    padding: 15px 0px 0px 15px;
+     border-bottom: 5px solid aqua;
+    margin: 0;
+}
+.about li{
+   float: left;
+}
+.about ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about_p{
+    
+    margin: 6px 50px 6px 0px;
+    font-size: 11px;
+}
+.about li:hover{
+
+    border-bottom: 5px solid red;
+    
+}
+
+
+
+/*BODY
+
+SECTION
+*/
+
+
+
+
+.details{
+    
+    width: 100%;
+    height: 250px;
+    background-color: rgb(243,244,246);
+
+    margin-top: 300px;
+    padding: 20px 0px;
+    padding-left:  130px;
+    padding-right: 130px;
+}
+
+
+.text_main{
+        position: relative;
+        width:600px;
+   
+    font-family:sans-serif;
+    margin:0 auto;
+    display: inline-block;
+    margin-left: 10px;
+
+    
+}
+.text_main>h1{
+        width:70%;
+    position: relative;
+    margin-bottom:20px;
+    padding: 10px;
+    
+   
+    
+}
+.text_main>p{
+        width:100%;
+    margin-top:20px;
+  
+    position: relative;
+    padding: 10px;
+}
+
+
+
+
+.event{
+   
+    width: 340px;
+    
+    height: auto;
+    position: absolute;
+    display: inline-block;
+    font-family:sans-serif;
+    margin:0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 100px;
+
+    
+}
+
+.box_body{
+    
+    width:60px;
+    height:50%;
+    padding:0px 10px;
+    background-color: white;
+    display: inline-grid;
+    position: relative;
+    margin: 0 auto;
+    
+    
+}
+
+.event_box{
+    position: relative;    
+}
+
+.box_body>p{
+    text-align: center;
+    margin:5px;
+    color: rgb(23,56,110);
+}
+
+.same{
+    font-size: 12px;
+    text-align: center;
+    padding: 1px;
+    margin: 10px;
+    text-decoration-color: rgb(23,56,110);
+}
+
+.number{
+    text-align: center;
+    font-size: 30px;
+    padding: 1px;
+    margin-left: 10px;
+    
+}
+
+
+/*low body*/
+
+
+.Last_news{
+    background-color: rgb(25,30,62);
+    width: 100%;
+    height: 350px;
+    position: relative;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.heading{
+    width: 400px;
+    color: white;
+   margin: 0px;
+    text-align:justify;
+    display: flex
+
+}
+
+.lowbody_box{
+    display: inline-flex;
+    width:100%;
+    height: 250px;
+    
+}
+.lowbody_box1{
+    width: 300px;
+    height: 250px;
+    
+    background-color:rgb(25,30,62);
+    margin-top: 20px;
+    
+    margin-left: 10px;
+    padding: 0px 10px;    
+    font-family:sans-serif;
+    
+    
+}
+
+
+.box1{
+    
+margin-right: 10px; 
+    text-decoration-color: white;
+}
+.box2{
+margin-left: 10px;
+    text-decoration-color: white;
+}
+.lowbody_box1>h1{
+    font-size: 25px;
+    margin: 0;
+    color: white;
+    
+}
+.lowbody_box1>p{
+    color: white;
+    text-align: justify;
+}
+.box3{
+    position: relative;
+    top: -80px;
+    float: right;
+    width:250px;
+    height: 350px;
+    margin-left: 90px;
+background-color: white;
+
+}
+.box3>p{
+    margin: 30px 10px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+footer{
+    position: absolute;
+    width:100%;
+    align-content: center;
+    text-align: center;
+    background-color: aqua;
+    padding-bottom:30px;
+    
+}
+.div{
+    width:200px;
+    height:200px;
+}
+.div1{
+    background-color: brown;
+    
+}
+.div2{
+    background-color: blue;
+    position: absolute;
+    top:0;
+    left: 0;
+    
+}
+.div3{
+    background-color: yellow;
+    
+    
+}
+.main{
+    margin-top: 100px;
+    padding:100px;
+    background-color: lightgreen;
+    position: relative
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+}
