@@ -1,14 +1,10 @@
 body{
-    /*for making body in center*/
     
-    /*width is 100% for any page*/
    margin: 0px;
-    /*Font family is sans-serif i.e. no edges on font corner */
+     background: #fff;
     font-family: sans-serif;
 }
-.whole{
-    width: 100%;
-}
+
 .background{
     width:100%;
 }
@@ -41,23 +37,9 @@ body{
 .resource{
     /*changing the position of whole resource div which contain icon*/
     float: right;
-    /* setting margin for making it vertically center*/
-    margin:15px;
+    
    }
-.box{
-    /*all the small divs containing all text and icon which are block elements. To make them inline we use float left. we use float left because we want to make all divs from left to right so this is the right way. we can use float right because containing div is small but if we use float right the div will become in reverse order*/
-    float: left; 
-    /*for adding some space arround content not div*/
-    padding-left: 10px;
-    
-    padding-right: 10px;
-    
-    font-size: 10px;
-    text-align: center;
-    height: 40px;
-    border-left: 2px solid rgb(47,52,82);
-    
-}
+
 /* for making right border of 4th div*/
 .box:nth-child(4){
     border-right: 2px solid rgb(47,52,82);
@@ -68,23 +50,44 @@ body{
     text-decoration: none;
     color: white;
     text-align: center;
+    font-size:12px;
+    font-weight: 200;
+    line-height: 0;
 
+}
+.box i{
+    font-size: 18px;
+    color: rgb(109,131,170);
+}
+.resource ul{
+    list-style-type: none;
+    float: left;
+
+}
+.resource ul li{
+    float: left;
+    padding:0 20px;
+    margin:0;
+    text-align: center;
+    height: 40px;
+    border-left: 2px solid rgb(47,52,82);
+    
 }
 
 /* HEADER SECTION */
 
 .about{
-    height:60px;
+    height: 60px;
     width: 100%;
-    
+    border-bottom: 5px solid aqua;
     background-color: white;
-
   
 }
 
 .about a{
     text-decoration: none;
-    font-size: 80%;
+    font-size: 12px;
+    color: rgb(38, 68, 120);
 }
 .content>ul {
    height: 40px;
@@ -94,12 +97,13 @@ body{
      
     margin: 0;
 }
-.content li{
-    width: 10%;
+.content>ul>li{
+
+    width: 100px; 
    float: left;
-    padding: 0px;
-    margin: 0px;
-    height: 40px;
+    padding: 0 0 10px;
+    margin: 0;
+    line-height: 1;
 }
 .about ul:after{
     content: "";
@@ -109,20 +113,67 @@ body{
 .about_p{
     
     margin: 6px 10px 6px 0px;
-    font-size: 0.7em ;
+    font-size: 10px;
+    color: rgb(194,198,209);
 }
 .about li:hover{
 
     border-bottom: 5px solid red;
     
 }
-.bar{
-    width: 100%;
-    height: 5px;
-    background-color: aqua;
+
+/*image slider*/
+
+.image{
+    width:100%;
+    
 }
+.body-up{
+    position: relative;
+}
+.upcoming-event{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right:20;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
 
+}
+.right-event{
+    float:right;
+}
+.right-event>p{
+        margin: 20px;
+}
+.calender> .material-icons{
+    font-size: 30px;
+    margin: 10px 0;
+    color:rgb(24,57,110);
+}
+.left-event{
+    float: left;
+}
+.time1{
+    font-size: 10px;
+    margin: 5px 15px 10px  ;
+    float: left;
+}
+.date-time .material-icons{
+    font-size: 10px;
+    color: rgb(137,151,164);
+    padding-right: 5px;
+}
+.upcoming-event h2{
+    margin:20px 0px 0 20px;
+    color: rgb(24,57,110);
+}
+.date-time{
+    color:rgb(137,151,164);
 
+}
 /*BODY
 
 SECTION
@@ -137,28 +188,33 @@ SECTION
     height: auto;
     background-color: rgb(243,244,246);
   overflow: hidden;
+    padding: 90px 0 30px ;
    
 }
 
 
 .text_main{
-        
+        padding-left: 10px;
         width:500px;
         float: left;
 
     
 }
 .text_main>h1{
+    color: rgb(23,56,110);
         width:70%;
       margin: 0 0 25px 0;
     font-weight: 500;
     font-size: 26px;
     
 }
-.text_main>hr{
+.horizontal-line{
+    height:0; 
+  border:0; 
+  border-top: 0.5px solid rgb(206, 210, 221); 
     width: 80px;
     margin: 0;
-    border-top: 0.2px solid rgb(243,244,246);
+
 }
 .text_main>p{
         width:100%;
@@ -174,14 +230,10 @@ SECTION
 .event{
    
     width: auto;
-    
+    padding-right: 10px;
     
     float: right;
     /*Height of div is 100px so we have 150 px more in bottom direction so i gave margin 75 px from top and bottom*/
-    
-    
-    
-    
     
 }
 
@@ -202,7 +254,8 @@ SECTION
     
     text-align: center;
     margin:9px 5px 20px 5px;
-    color: rgb(23,56,110);
+    color: rgb(24,57,110);
+    
 }
 
 .same{
@@ -222,6 +275,7 @@ SECTION
     width:100%;
     height: 1px;
     background-color: rgb(221,228,244);
+    opacity: 0.4;
     position: relative;
     top: 60px;
     
@@ -232,59 +286,138 @@ SECTION
 
     
 }
-
+.all-button{
+    margin:25px 0px;
+    
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(237,20,91);
+    color: white;
+}
+.course-button{
+    float: right;
+}
 /*low body*/
 
-
 .Last_news{
+    padding: 0 10px;
+    overflow: hidden;
+}
+.left-content{
+    margin-top: 30px;
+    float:left;
+}
+
+.Low-body{
     background-color: rgb(25,30,62);
     width: 100%;
-    height: 350px;
-    position: relative;
-    padding-left: 130px;
-    padding-right: 130px;
 }
+
 .heading{
-    width: 400px;
+
+    width:700px;
+    height: auto;
     color: white;
-   margin: 0px;
-    text-align:justify;
-    display: flex
+    overflow: hidden;
+   margin-bottom: 20px;
+
 
 }
-
-.lowbody_box{
-    display: inline-flex;
-    width:100%;
-    height: 250px;
+.heading>p{
+    float: right;
+    text-decoration: underline;
+    font-size:12px;
+    cursor: pointer;
     
+}
+.heading>h1{
+    
+    font-size: 25px;
+    font-weight: 500;
+    float: left;
+    margin: 11px;
+
+}
+.heading>img{
+    height: 40px;
+    width: 40px;
+        
+    float: left;
+    margin: 5px 0px;
+}
+.date-box{
+    width: 60px;
+    height:80px;
+    border:2px solid white;
+    text-align: center;
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+    .time-p{
+    font-size: 12px;
+    
+}
+
+.date-box>h1{
+    font-weight: 100;
+    font-size: 30px;
+    margin: 10px 0 0 0;
+    color: white;
+}
+.date-box>p{
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+    margin: 10px 0 0 0;
+}
+.time-p{
+    font-size: 12px;
+    color: rgb(122, 128, 164);
+}
+.time-p>span{
+    
+    color: rgb(237,20,91);
+}
+.read-more{
+    text-decoration: none;
+    float: left;
+    margin: 10px 0;
+    color: rgb(122, 123,144);
+    font-size: 13px
+}
+.circle{
+    float: right;
+    margin: 0 0 0 15px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+.circle>span{
+    color: white;
+    font-weight: 700;
+}
+.lowbody_box{
+    clear: both;
+    height: auto;
+    overflow: hidden;
+    float: left;
 }
 .lowbody_box1{
-    width: 300px;
-    height: 250px;
-    
-    background-color:rgb(25,30,62);
-    margin-top: 20px;
-    
-    margin-left: 10px;
-    padding: 0px 10px;    
-    font-family:sans-serif;
-    
+    width: 280px;
+
+    float: left;       
+    margin-right: 20px; 
     
 }
 
 
-.box1{
-    
-margin-right: 10px; 
-    text-decoration-color: white;
-}
-.box2{
-margin-left: 10px;
-    text-decoration-color: white;
-}
+
+
 .lowbody_box1>h1{
     font-size: 25px;
+    font-weight: 100;
     margin: 0;
     color: white;
     
@@ -292,85 +425,106 @@ margin-left: 10px;
 .lowbody_box1>p{
     color: white;
     text-align: justify;
+    font-size: 12px;
 }
+
 .box3{
-    position: relative;
-    top: -80px;
-    float: right;
-    width:250px;
-    height: 350px;
-    margin-left: 90px;
+        padding-right: 0px;
+        width:300px;
 background-color: white;
-
-}
-.box3>p{
-    margin: 30px 10px;
-    text-align: justify;
-    font-size: 14px;
+float:right;
+    position: relative;
 }
 
-footer{
+.video-image{
     position: absolute;
-    width:100%;
-    align-content: center;
-    text-align: center;
-    background-color: aqua;
-    padding-bottom:30px;
-    
-}
-.div{
-    width:200px;
-    height:200px;
-}
-.div1{
-    background-color: brown;
-    
-}
-.div2{
-    background-color: blue;
-    position: absolute;
-    top:0;
     left: 0;
+    top: 0;
+    width: 300px;
+    height: 160px;
+}
+.play-btn{
+    position: absolute;
+    height: 50px;
+    margin: 10px;
+    top: 90px;
+    left: 230;
+
+}
+.video{
+    position: absolute;
+    top: 0;
+}
+.video>h1{
+    margin: 10px;
+    width: 250px;
+    font-weight: 100;
+    font-size: 18px;
+    position: absolute;
+    color: white;
+    top:100;
+}
+
+.box3 p , .box3 a{
+    margin: 20px 10px;
+}
+.box4>p{
+    
+    color: rgb(100, 117, 135);
+}
+
+.box4>.circle{
+    
+    border: 2px solid rgb(122, 123,144);
     
 }
-.div3{
-    background-color: yellow;
-    
+
+.box4>.circle>span{
+    color: rgb(122, 123,144);
+
+}
+
+/*footer section*/
+
+.foot{
+    width:100%;
+    height: auto;
+   
+    text-align: center;
+    background-color: rgb(243,244,246);
+
     
 }
-.main{
-    margin-top: 100px;
-    padding:100px;
-    background-color: lightgreen;
-    position: relative
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+.line-footer{
+    margin: 0;
+    padding: 30px
 }
+.courses>h1,.courses>p{
+    margin: 0 0 10px 0;
+    padding-top: 0px;
+}
+.courses>h1{
+    
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(23,56,110);
+}
+.courses>p{
+    margin-bottom: 60px;
+    font-size: 18px;
+    color: rgb(186,192,204);
+}
+.search>.text,.search>select{
+    width: 250px;
+    height: 50px;
+    margin-right:15px;
+    color: rgb(137,151,164);
+    padding: 0px 10px;
+    font-size:11px;
+    border: 1px solid rgb(226,226,226);
+    
+}
+.search-button{
+    padding: 10px 30px;
+}
+
