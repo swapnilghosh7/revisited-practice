@@ -1,3 +1,14 @@
+h1{
+    font-size:32px;
+}
+h2{
+    font-size: 24px;
+}
+p{
+    font-size: 12px;
+    
+}
+
 body{
     
    margin: 0px;
@@ -11,7 +22,7 @@ body{
 /*header*/
 
 .logo_img{
-    width: 150px;
+    width: 250px;
     height: 40px;
     /*for setting margin*/
     margin: 15px;
@@ -61,7 +72,6 @@ body{
 }
 .resource ul{
     list-style-type: none;
-    float: left;
 
 }
 .resource ul li{
@@ -87,7 +97,7 @@ body{
 .about a{
     text-decoration: none;
     font-size: 12px;
-    color: rgb(38, 68, 120);
+    color: rgb(24, 57, 110);
 }
 .content>ul {
    height: 40px;
@@ -98,8 +108,9 @@ body{
     margin: 0;
 }
 .content>ul>li{
+    
 
-    width: 100px; 
+    width: 130px; 
    float: left;
     padding: 0 0 10px;
     margin: 0;
@@ -119,7 +130,6 @@ body{
 .about li:hover{
 
     border-bottom: 5px solid red;
-    
 }
 
 /*image slider*/
@@ -162,6 +172,7 @@ body{
     float: left;
 }
 .date-time .material-icons{
+    
     font-size: 10px;
     color: rgb(137,151,164);
     padding-right: 5px;
@@ -169,8 +180,10 @@ body{
 .upcoming-event h2{
     margin:20px 0px 0 20px;
     color: rgb(24,57,110);
+    font-weight: 200;
 }
 .date-time{
+    margin-left: 5px;
     color:rgb(137,151,164);
 
 }
@@ -201,17 +214,17 @@ SECTION
     
 }
 .text_main>h1{
-    color: rgb(23,56,110);
+    color: rgb(24,57,110);
         width:70%;
       margin: 0 0 25px 0;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 32px;
     
 }
 .horizontal-line{
     height:0; 
   border:0; 
-  border-top: 0.5px solid rgb(206, 210, 221); 
+  border-top: 1px solid rgb(206, 210, 221); 
     width: 80px;
     margin: 0;
 
@@ -219,7 +232,7 @@ SECTION
 .text_main>p{
         width:100%;
     margin:25px 0 0 0;
-    font-size: 11px;
+    font-size: 12px;
     color: rgb(100, 117, 135);
      
 }
@@ -261,8 +274,7 @@ SECTION
 .same{
     
     font-size: 12px;
-    text-align: center;
-    text-decoration-color: rgb(23,56,110);
+    
 }
 
 .number{
@@ -319,7 +331,7 @@ SECTION
     height: auto;
     color: white;
     overflow: hidden;
-   margin-bottom: 20px;
+   margin: 0 0 20px -5px;
 
 
 }
@@ -332,7 +344,7 @@ SECTION
 }
 .heading>h1{
     
-    font-size: 25px;
+    font-size: 32px;
     font-weight: 500;
     float: left;
     margin: 11px;
@@ -341,7 +353,7 @@ SECTION
 .heading>img{
     height: 40px;
     width: 40px;
-        
+    padding: 0px;    
     float: left;
     margin: 5px 0px;
 }
@@ -415,8 +427,8 @@ SECTION
 
 
 
-.lowbody_box1>h1{
-    font-size: 25px;
+.lowbody_box1>h2{
+    font-size: 20px;
     font-weight: 100;
     margin: 0;
     color: white;
@@ -424,6 +436,7 @@ SECTION
 }
 .lowbody_box1>p{
     color: white;
+    width:100%;
     text-align: justify;
     font-size: 12px;
 }
@@ -455,9 +468,9 @@ float:right;
     position: absolute;
     top: 0;
 }
-.video>h1{
+.video>h2{
     margin: 10px;
-    width: 250px;
+    width: 200px;
     font-weight: 100;
     font-size: 18px;
     position: absolute;
@@ -469,7 +482,7 @@ float:right;
     margin: 20px 10px;
 }
 .box4>p{
-    
+    font-size: 12px;
     color: rgb(100, 117, 135);
 }
 
@@ -491,23 +504,21 @@ float:right;
     height: auto;
    
     text-align: center;
-    background-color: rgb(243,244,246);
+    background-color: rgb(221,228,244);
+    padding-bottom: 10px;
 
     
 }
-.line-footer{
-    margin: 0;
-    padding: 30px
-}
+
 .courses>h1,.courses>p{
     margin: 0 0 10px 0;
     padding-top: 0px;
 }
 .courses>h1{
-    
+    padding-top:50px;
     font-size: 40px;
     font-weight: 400;
-    color: rgb(23,56,110);
+    color: rgb(24,57,110);
 }
 .courses>p{
     margin-bottom: 60px;
@@ -527,4 +538,10 @@ float:right;
 .search-button{
     padding: 10px 30px;
 }
+.last>p{
+    font-size: 14px;
+    color: rgb(186,192,204);
+    margin: 0;
+}
+
 
