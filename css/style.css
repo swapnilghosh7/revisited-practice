@@ -242,7 +242,7 @@ SECTION
 
 .event{
    
-    width: auto;
+   
     padding-right: 10px;
     
     float: right;
@@ -279,9 +279,8 @@ SECTION
 
 .number{
     
-    text-align: center;
-    font-size: 30px;
-    padding: 1px;
+        font-size: 30px;
+
 }
 .line{
     width:100%;
@@ -292,12 +291,7 @@ SECTION
     top: 60px;
     
 }
-.dot{
-    display: block;
-    height: 7px;
 
-    
-}
 .all-button{
     margin:25px 0px;
     
@@ -331,7 +325,7 @@ SECTION
     height: auto;
     color: white;
     overflow: hidden;
-   margin: 0 0 20px -5px;
+   margin: 0 0 20px -10px;
 
 
 }
@@ -504,7 +498,7 @@ float:right;
     height: auto;
    
     text-align: center;
-    background-color: rgb(221,228,244);
+    background-color: rgb(243,244,246);
     padding-bottom: 10px;
 
     
