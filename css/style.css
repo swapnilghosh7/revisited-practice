@@ -1,45 +1,21 @@
-h1{
-    font-size:32px;
-}
-h2{
-    font-size: 24px;
-}
-p{
-    font-size: 12px;
-    
-}
 
-body{
-    
-   margin: 0px;
-     background: #fff;
-    font-family: sans-serif;
-}
 
-.background{
-    width:100%;
-}
 /*header*/
 
 .logo_img{
     width: 250px;
     height: 40px;
     /*for setting margin*/
-    margin: 15px;
     
 }
 
 .header_section{
     /*width of header section is 100%*/
     width:100%;
-    
+    padding: 15px 0;
     background-color: rgb(25,30,62);
     /*constant height of header section*/
     height: 70px;
-}
-.content{
-    width: 1100px;
-    margin: 0 auto;
 }
 
 
@@ -63,7 +39,6 @@ body{
     text-align: center;
     font-size:12px;
     font-weight: 200;
-    line-height: 0;
 
 }
 .box i{
@@ -77,20 +52,21 @@ body{
 .resource ul li{
     float: left;
     padding:0 20px;
-    margin:0;
     text-align: center;
-    height: 40px;
     border-left: 2px solid rgb(47,52,82);
     
+}
+.resource ul li span{
+    display: block;
+    margin: 5px;
 }
 
 /* HEADER SECTION */
 
 .about{
-    height: 60px;
-    width: 100%;
+    height:50px;
     border-bottom: 5px solid aqua;
-    background-color: white;
+    padding: 10px 0;
   
 }
 
@@ -99,22 +75,11 @@ body{
     font-size: 12px;
     color: rgb(24, 57, 110);
 }
-.content>ul {
-   height: 40px;
-    list-style-type: none;
-    /*padding from top and bottom in ul*/
-    padding: 15px 0px 0px 15px;
-     
-    margin: 0;
-}
 .content>ul>li{
     
+    float: left;
+    padding-right: 30px;
 
-    width: 130px; 
-   float: left;
-    padding: 0 0 10px;
-    margin: 0;
-    line-height: 1;
 }
 .about ul:after{
     content: "";
@@ -155,12 +120,10 @@ body{
 .right-event{
     float:right;
 }
-.right-event>p{
-        margin: 20px;
-}
+
 .calender> .material-icons{
     font-size: 30px;
-    margin: 10px 0;
+    padding: 20px;
     color:rgb(24,57,110);
 }
 .left-event{
@@ -168,8 +131,9 @@ body{
 }
 .time1{
     font-size: 10px;
-    margin: 5px 15px 10px  ;
+    padding: 10px; ;
     float: left;
+    margin:0;
 }
 .date-time .material-icons{
     
@@ -178,7 +142,8 @@ body{
     padding-right: 5px;
 }
 .upcoming-event h2{
-    margin:20px 0px 0 20px;
+    padding:10px;
+    margin: 0;
     color: rgb(24,57,110);
     font-weight: 200;
 }
@@ -213,7 +178,7 @@ SECTION
 
     
 }
-.text_main>h1{
+.text_main h1{
     color: rgb(24,57,110);
         width:70%;
       margin: 0 0 25px 0;
@@ -266,7 +231,8 @@ SECTION
 .box_body>p{
     
     text-align: center;
-    margin:9px 5px 20px 5px;
+    margin:0;
+    padding: 10px;
     color: rgb(24,57,110);
     
 }
@@ -306,11 +272,11 @@ SECTION
 /*low body*/
 
 .Last_news{
-    padding: 0 10px;
+    padding: 0px 10px;
     overflow: hidden;
 }
 .left-content{
-    margin-top: 30px;
+    padding-top: 30px;
     float:left;
 }
 
@@ -349,7 +315,7 @@ SECTION
     width: 40px;
     padding: 0px;    
     float: left;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 .date-box{
     width: 60px;
@@ -389,7 +355,11 @@ SECTION
     float: left;
     margin: 10px 0;
     color: rgb(122, 123,144);
-    font-size: 13px
+    font-size: 13px;
+    
+}
+.read-more div{
+    line-height: 1;
 }
 .circle{
     float: right;
@@ -405,16 +375,15 @@ SECTION
     font-weight: 700;
 }
 .lowbody_box{
-    clear: both;
+    
     height: auto;
     overflow: hidden;
-    float: left;
+    
 }
 .lowbody_box1{
-    width: 280px;
-
-    float: left;       
-    margin-right: 20px; 
+    width: 250px;
+    padding:0 15px;
+    float: left;        
     
 }
 
@@ -436,6 +405,7 @@ SECTION
 }
 
 .box3{
+       
         padding-right: 0px;
         width:300px;
 background-color: white;
@@ -458,10 +428,7 @@ float:right;
     left: 230;
 
 }
-.video{
-    position: absolute;
-    top: 0;
-}
+
 .video>h2{
     margin: 10px;
     width: 200px;
@@ -473,7 +440,8 @@ float:right;
 }
 
 .box3 p , .box3 a{
-    margin: 20px 10px;
+    padding:10px;
+    margin: 0;
 }
 .box4>p{
     font-size: 12px;
@@ -496,7 +464,6 @@ float:right;
 .foot{
     width:100%;
     height: auto;
-   
     text-align: center;
     background-color: rgb(243,244,246);
     padding-bottom: 10px;
@@ -518,6 +485,7 @@ float:right;
     margin-bottom: 60px;
     font-size: 18px;
     color: rgb(186,192,204);
+    
 }
 .search>.text,.search>select{
     width: 250px;
@@ -536,6 +504,44 @@ float:right;
     font-size: 14px;
     color: rgb(186,192,204);
     margin: 0;
+    
 }
+.plan{
+    margin: 20px 0;
+    width:100%;
+    background-image: url(../img/cover-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.plan-text{
+    background-color: rgba(255, 0, 0, 0.4);
+    padding: 40px 0;
 
-
+   
+}
+.plan-text h1{
+    color: white;
+}
+.plan-text .content p{
+width:600px;
+    margin-top: 10px;
+    color: white;
+}
+.plan-text .default-wrapper{
+    position:relative;
+}
+.plan-text .default-wrapper .img-wrapper img{
+    position: absolute;
+    width:320px;
+    height: 320px;
+    top: -70;
+    right: 0;
+    border-radius: 50%;
+    
+    
+}
+.announcement-box{
+    width:200px;
+    margin-right:50px;
+}
