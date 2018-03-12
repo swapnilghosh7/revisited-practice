@@ -353,7 +353,6 @@ SECTION
 .read-more{
     text-decoration: none;
     float: left;
-    margin: 10px 0;
     color: rgb(122, 123,144);
     font-size: 13px;
     
@@ -541,7 +540,79 @@ width:600px;
     
     
 }
+.news-announcement{
+    background-image:url(../img/cover3.jpg);
+    color: white;
+}
+.section-bakground{
+    background-color: rgba(25,30,62,0.4);
+    padding: 40px 0;
+
+}
 .announcement-box{
-    width:200px;
-    margin-right:50px;
+    width:225px;
+    float: left;
+    margin-right:40px;
+}
+.message-box{
+    width: 305px;
+    padding: 50px 20px;
+    margin: -40px 0;
+    float: left;
+    color: rgb(23,56,110);
+    background-color: white;
+}
+.message-box .default-wrapper span:first-child{
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 32px;
+    line-height: 1.3;
+}
+.message-box .default-wrapper span:nth-child(2){
+    font-size: 21px;
+        float: left;
+    width: 200px;
+    margin-left: 10px;
+    line-height: 1.3;
+}
+.message-box p{
+    margin: 10px 0;
+    color: grey;
+}
+.announcement-box .img-wrapper{
+    margin: 20px 0;
+}
+.announcement-box span{
+    
+  font-size: 12px; 
+    color: rgb(122, 128, 164);
+}
+.announcement-box span:nth-child(2){
+    color: rgb(237,20,91);
+}
+.announcement-box h3{
+    margin-bottom: 10px;
+}
+.message-box span:nth-child(2){
+    color: rgb(23,56,110);
+}
+.message-box .img-wrapper{
+   text-align: center;
+}
+.message-box span:nth-child(4){
+    
+    font-weight: 600;
+    display: block;
+}
+.message-box span:nth-child(5){
+    font-size:10px;
+}
+.life-in-upside .img-wrapper{
+    width: 275px;
+    float: left;
 }
