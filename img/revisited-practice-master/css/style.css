@@ -1,0 +1,785 @@
+
+
+/*header*/
+
+.logo_img{
+    width: 250px;
+    height: 40px;
+    /*for setting margin*/
+    
+}
+
+.header_section{
+    /*width of header section is 100%*/
+    width:100%;
+    padding: 15px 0;
+    background-color: rgb(25,30,62);
+    /*constant height of header section*/
+    height: 70px;
+}
+
+
+
+
+.resource{
+    /*changing the position of whole resource div which contain icon*/
+    float: right;
+    
+   }
+
+/* for making right border of 4th div*/
+.box:nth-child(4){
+    border-right: 2px solid rgb(47,52,82);
+    
+}
+/* > this sign is a immedieate child selector which select its immediate children*/
+.box>a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size:12px;
+    font-weight: 200;
+
+}
+.box i{
+    font-size: 18px;
+    color: rgb(109,131,170);
+}
+.resource ul{
+    list-style-type: none;
+
+}
+.resource ul li{
+    float: left;
+    padding:0 20px;
+    text-align: center;
+    border-left: 2px solid rgb(47,52,82);
+    
+}
+.resource ul li span{
+    display: block;
+    margin: 5px;
+}
+
+/* HEADER SECTION */
+
+.about{
+    height:50px;
+    border-bottom: 5px solid aqua;
+    padding: 10px 0;
+  
+}
+
+.about a{
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(24, 57, 110);
+}
+.content>ul>li{
+    
+    float: left;
+    padding-right: 30px;
+
+}
+.about ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about_p{
+    
+    margin: 6px 10px 6px 0px;
+    font-size: 10px;
+    color: rgb(194,198,209);
+}
+.about li:hover{
+
+    border-bottom: 5px solid red;
+}
+
+/*image slider*/
+
+.image{
+    width:100%;
+    
+}
+.body-up{
+    position: relative;
+}
+.upcoming-event{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right:20;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+
+}
+.right-event{
+    float:right;
+}
+
+.calender> .material-icons{
+    font-size: 30px;
+    padding: 20px;
+    color:rgb(24,57,110);
+}
+.left-event{
+    float: left;
+}
+.time1{
+    font-size: 10px;
+    padding: 10px; ;
+    float: left;
+    margin:0;
+}
+.date-time .material-icons{
+    
+    font-size: 10px;
+    color: rgb(137,151,164);
+    padding-right: 5px;
+}
+.upcoming-event h2{
+    padding:10px;
+    margin: 0;
+    color: rgb(24,57,110);
+    font-weight: 200;
+}
+.date-time{
+    margin-left: 5px;
+    color:rgb(137,151,164);
+
+}
+/*BODY
+
+SECTION
+*/
+
+
+
+
+.details{
+    
+    width: 100%;
+    height: auto;
+    background-color: rgb(243,244,246);
+  overflow: hidden;
+    padding: 90px 0 30px ;
+   
+}
+
+
+.text_main{
+        padding-left: 10px;
+        width:500px;
+        float: left;
+
+    
+}
+.text_main h1{
+    color: rgb(24,57,110);
+        width:70%;
+      margin: 0 0 25px 0;
+    font-weight: 500;
+    font-size: 32px;
+    
+}
+.horizontal-line{
+    height:0; 
+  border:0; 
+  border-top: 1px solid rgb(206, 210, 221); 
+    width: 80px;
+    margin: 0;
+
+}
+.text_main>p{
+        width:100%;
+    margin:25px 0 0 0;
+    font-size: 12px;
+    color: rgb(100, 117, 135);
+     
+}
+
+
+
+
+.event{
+   
+   
+    padding-right: 10px;
+    
+    float: right;
+    /*Height of div is 100px so we have 150 px more in bottom direction so i gave margin 75 px from top and bottom*/
+    
+}
+
+.box_body{
+    
+    width:100px;
+    height: 120px;
+    float: left;
+    background-color: white;
+   margin-left: 10px;
+    
+    border-radius: 5px;
+    
+}
+
+
+.box_body>p{
+    
+    text-align: center;
+    margin:0;
+    padding: 10px;
+    color: rgb(24,57,110);
+    
+}
+
+.same{
+    
+    font-size: 12px;
+    
+}
+
+.number{
+    
+        font-size: 30px;
+
+}
+.line{
+    width:100%;
+    height: 1px;
+    background-color: rgb(221,228,244);
+    opacity: 0.4;
+    position: relative;
+    top: 60px;
+    
+}
+
+.all-button{
+    margin:25px 0px;
+    
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(237,20,91);
+    color: white;
+}
+.course-button{
+    float: right;
+}
+/*low body*/
+
+.Last_news{
+    padding: 0px 10px;
+    overflow: hidden;
+}
+.left-content{
+    padding-top: 30px;
+    float:left;
+}
+
+.Low-body{
+    background-color: rgb(25,30,62);
+    width: 100%;
+}
+
+.heading{
+
+    width:700px;
+    height: auto;
+    color: white;
+    overflow: hidden;
+   margin: 0 0 20px -10px;
+
+
+}
+.heading>p{
+    float: right;
+    text-decoration: underline;
+    font-size:12px;
+    cursor: pointer;
+    
+}
+.heading>h1{
+    
+    font-size: 32px;
+    font-weight: 500;
+    float: left;
+    margin: 11px;
+
+}
+.heading>img{
+    height: 40px;
+    width: 40px;
+    padding: 0px;    
+    float: left;
+    margin: 10px 0px;
+}
+.date-box{
+    width: 60px;
+    height:80px;
+    border:2px solid white;
+    text-align: center;
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+    .time-p{
+    font-size: 12px;
+    
+}
+
+.date-box>h1{
+    font-weight: 100;
+    font-size: 30px;
+    margin: 10px 0 0 0;
+    color: white;
+}
+.date-box>p{
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+    margin: 10px 0 0 0;
+}
+.time-p{
+    font-size: 12px;
+    color: rgb(122, 128, 164);
+}
+.time-p>span{
+    
+    color: rgb(237,20,91);
+}
+.read-more{
+    text-decoration: none;
+    float: left;
+    color: rgb(122, 123,144);
+    font-size: 13px;
+    
+}
+.read-more div{
+    line-height: 1;
+}
+.circle{
+    float: right;
+    margin: 0 0 0 15px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+.circle>span{
+    color: white;
+    font-weight: 700;
+}
+.lowbody_box{
+    
+    height: auto;
+    overflow: hidden;
+    
+}
+.lowbody_box1{
+    width: 250px;
+    padding:0 15px;
+    float: left;        
+    
+}
+
+
+
+
+.lowbody_box1>h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+    color: white;
+    
+}
+.lowbody_box1>p{
+    color: white;
+    width:100%;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.box3{
+       
+        padding-right: 0px;
+        width:300px;
+background-color: white;
+float:right;
+    position: relative;
+}
+
+.video-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 160px;
+}
+.play-btn{
+    position: absolute;
+    height: 50px;
+    margin: 10px;
+    top: 90px;
+    left: 230;
+
+}
+
+.video>h2{
+    margin: 10px;
+    width: 200px;
+    font-weight: 100;
+    font-size: 18px;
+    position: absolute;
+    color: white;
+    top:100;
+}
+
+.box3 p , .box3 a{
+    padding:10px;
+    margin: 0;
+}
+.box4>p{
+    font-size: 12px;
+    color: rgb(100, 117, 135);
+}
+
+.box4>.circle{
+    
+    border: 2px solid rgb(122, 123,144);
+    
+}
+
+.box4>.circle>span{
+    color: rgb(122, 123,144);
+
+}
+
+/*footer section*/
+
+.foot{
+    width:100%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(243,244,246);
+    padding-bottom: 10px;
+
+    
+}
+
+.courses>h1,.courses>p{
+    margin: 0 0 10px 0;
+    padding-top: 0px;
+}
+.courses>h1{
+    padding-top:50px;
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(24,57,110);
+}
+.courses>p{
+    margin-bottom: 60px;
+    font-size: 18px;
+    color: rgb(186,192,204);
+    
+}
+.search>.text,.search>select{
+    width: 250px;
+    height: 50px;
+    margin-right:15px;
+    color: rgb(137,151,164);
+    padding: 0px 10px;
+    font-size:11px;
+    border: 1px solid rgb(226,226,226);
+    
+}
+.search-button{
+    padding: 10px 30px;
+}
+.last>p{
+    font-size: 14px;
+    color: rgb(186,192,204);
+    margin: 0;
+    
+}
+.plan{
+    margin: 20px 0;
+    width:100%;
+    background-image: url(../img/cover-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.plan-text{
+    background-color: rgba(25,30,62,0.7);
+    padding: 40px 0;
+
+   
+}
+.plan-text h2{
+    color: white;
+}
+.plan-text .content p{
+width:600px;
+    margin-top: 10px;
+    color: white;
+}
+.plan-text .default-wrapper{
+    position:relative;
+}
+.plan-text .default-wrapper .img-wrapper img{
+    position: absolute;
+    width:320px;
+    height: 320px;
+    top: -70;
+    right: 0;
+    border-radius: 50%;
+    
+    
+}
+.news-announcement{
+    background-image:url(../img/cover3.jpg);
+    color: white;
+}
+.news-announcement h2{
+
+    font-weight: 600;
+}
+.section-bakground{
+    background-color: rgba(25,30,62,0.7);
+    padding: 40px 0;
+
+}
+.announcement-box{
+    width:225px;
+    float: left;
+    margin-right:40px;
+}
+.message-box{
+    width: 305px;
+    padding: 50px 20px;
+    margin: -40px 0;
+    float: left;
+    color: rgb(23,56,110);
+    background-color: white;
+}
+.message-box .default-wrapper span:first-child{
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 32px;
+    line-height: 1.3;
+}
+.message-box .default-wrapper span:nth-child(2){
+    font-size: 21px;
+        float: left;
+    width: 200px;
+    margin-left: 10px;
+    line-height: 1.3;
+}
+.message-box p{
+    margin: 10px 0;
+    color: grey;
+}
+.announcement-box .img-wrapper{
+    margin: 20px 0;
+}
+.announcement-box span{
+    
+  font-size: 12px; 
+    color: rgb(122, 128, 164);
+}
+.announcement-box span:nth-child(2){
+    color: rgb(237,20,91);
+}
+.announcement-box h3{
+    margin-bottom: 10px;
+}
+.message-box span:nth-child(2){
+    color: rgb(23,56,110);
+}
+.message-box .img-wrapper{
+   text-align: center;
+}
+.message-box span:nth-child(4){
+    
+    font-weight: 600;
+    display: block;
+}
+.message-box span:nth-child(5){
+    font-size:10px;
+}
+
+.life-in-upside{
+
+    padding: 30px 0;
+    text-align: center;
+    color: rgb(23,56,110);
+    background-color: white;
+}
+.life-in-upside .img-wrapper{
+    width: 275px;
+    float: left;
+}
+.seperator div{
+    width: 200px;
+    height: 2px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    margin: 0 auto;
+}
+.seperator{
+    margin: 10px;
+}
+.life-in-upside .default-wrapper{
+    margin-top: 20px;
+}
+.life-in-upside .content span:nth-child(3){
+    color:rgb(186, 192, 206);
+}
+
+.customer-opinion{
+    padding: 30px 0;
+    background-color: white;
+}
+.customer-opinion h2{
+    text-align: center;
+    color: rgb(23,56,110);
+}
+.customer-opinion hr{
+    margin: 5px 0;
+}
+.customer-opinion .section-heading{
+    text-align: center;
+}
+.customer-opinion .default-wrapper{
+    margin-top: 30px;
+}
+.review-box{
+    width: 320px;
+    margin-right: 70px;
+    float: left;
+}
+.review-box:nth-child(3){
+    margin-right: 0;
+}
+.review{
+    padding:25px;
+    background-color: rgb(236, 236, 236);
+    position: relative;
+}
+.review span{
+    position: absolute;
+    bottom: -15;
+    color: rgb(236, 236, 236);
+}
+
+.review-box .img-wrapper img{
+    border-radius: 100%;
+    height: 40px;
+     width:40px;
+    vertical-align: middle;
+}
+.customer-info-wrap{
+    margin-top: 15px;
+}
+.customer-info{
+    margin-left: 10px;
+}
+
+.customer-info span:nth-child(2){
+    display: block;
+    font-size:12px;
+    color: rgb(100,117,133);
+}
+.customer-info span:nth-child(1){
+    display: block;
+    font-weight: 700;
+    color:rgb(23,56,110);
+}
+
+footer{
+    padding:0  50px;
+    margin-top:20px;
+    color: white;
+    background-color: rgb(39,46,86);
+}
+.footer-box{
+    width: 383px;
+    height: 350px;
+    padding: 30px;
+    float: left;
+}
+.footer-box:nth-child(1)
+{
+    background-color: rgb(37,42,82);
+}
+.company-logo{
+    margin-bottom: 20px;
+}
+.logo-footer{
+    float: left;
+    width: 53px;
+}
+
+.company-name{
+    float:right;
+    color: white;
+    padding-left: 10px;
+    border-left: 1px solid white;
+    vertical-align: top;
+
+}
+.company-name span:nth-child(1)
+{
+    display: block;
+    font-size: 27px;
+    font-weight: 800;
+    
+}
+.company-name span:nth-child(2)
+{
+    font-size: 12px;
+
+}
+.offer-box{
+    padding: 25px;
+    text-align: center;
+}
+.offer-box span{
+    display: block;
+    background-color: rgb(47,68,121);
+}
+.offer-box span:nth-child(1),.offer-box span:nth-child(4){
+    font-size: 22px;
+    font-weight: 600;
+}
+.offer-box span:nth-child(2),.offer-box span:nth-child(3){
+    font-size: 12px;
+}
+
+.footer-box:nth-child(2){
+    
+    background-color: rgb(34,39,77);
+}
+
+
+.quick-links{
+    width:120px;
+    margin-left: 50px;
+}
+.footer-box:nth-child(2) ul{
+padding-left: 10px
+}
+.footer-box:nth-child(2) ul li{
+    margin: 10px 0;
+}
+.footer-box:nth-child(3){
+    background-color: rgb(31,35,70);
+}
