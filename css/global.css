@@ -68,10 +68,7 @@ a:hover{
 button:hover{
     cursor:pointer;
 }
-.material-icons,i{
-    vertical-align: middle;
-    
-}
+span{vertical-align: middle;}
 td,th{
     
     font-size: 12px;
@@ -81,4 +78,13 @@ table{
     width:100%;
     
 }
-li{font-size:12px;}
+li{
+    font-size:12px;
+}
+.all-button{
+    
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(237,20,91);
+    color: white;
+}

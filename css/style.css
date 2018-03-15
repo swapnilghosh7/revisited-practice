@@ -1,6 +1,6 @@
 
 
-/*header*/
+/*----------------------header-------------------------------*/
 
 .logo_img{
     width: 250px;
@@ -8,32 +8,49 @@
     /*for setting margin*/
     
 }
+.title{
+    width: 365px;
+    float: left;
+
+}
+.title .company-name{
+    border-color: rgb(47,52,82);
+}
+.title .logo{
+    width: 50px;
+    float: left;
+    
+}
+.title h1{
+    line-height: 1.2;
+    font-weight: 800;
+}
 
 .header_section{
     /*width of header section is 100%*/
-    width:100%;
+    
     padding: 15px 0;
     background-color: rgb(25,30,62);
     /*constant height of header section*/
-    height: 70px;
+    height: 85px;
 }
 
 
 
 
-.resource{
-    /*changing the position of whole resource div which contain icon*/
+.left-header{
+    /*changing the position of whole left-header div which contain icon*/
     float: right;
     
    }
 
 /* for making right border of 4th div*/
-.box:nth-child(4){
+.left-header ul li:nth-child(4){
     border-right: 2px solid rgb(47,52,82);
     
 }
 /* > this sign is a immedieate child selector which select its immediate children*/
-.box>a{
+.left-header ul li>a{
     text-decoration: none;
     color: white;
     text-align: center;
@@ -41,149 +58,139 @@
     font-weight: 200;
 
 }
-.box i{
+.left-header ul li i{
     font-size: 18px;
     color: rgb(109,131,170);
 }
-.resource ul{
+.left-header ul{
     list-style-type: none;
 
 }
-.resource ul li{
+.left-header ul li{
     float: left;
     padding:0 20px;
     text-align: center;
     border-left: 2px solid rgb(47,52,82);
     
 }
-.resource ul li span{
+/*.left-header ul li a:hover{
+   
+    
+    color: darkblue;
+    background-color: white;
+    
+    
+}*/
+
+.left-header ul li span{
+    font-size:10px;
     display: block;
-    margin: 5px;
+    margin-top: 5px;
 }
 
-/* HEADER SECTION */
-
-.about{
-    height:50px;
-    border-bottom: 5px solid aqua;
+/* -----------------------------NAV HEADER SECTION-------------------- */
+.nav-list{
+background-color: white;
+ height:60px; 
+     border-bottom: 5px solid aqua;
     padding: 10px 0;
-  
 }
 
-.about a{
+.nav-list nav a{
     text-decoration: none;
     font-size: 12px;
     color: rgb(24, 57, 110);
 }
-.content>ul>li{
+.nav-list nav>ul>li{
     
     float: left;
-    padding-right: 30px;
+    padding-right: 50px;
 
 }
-.about ul:after{
-    content: "";
+
+.nav-list nav ul li span{
     display: block;
-    clear: both;
-}
-.about_p{
-    
-    margin: 6px 10px 6px 0px;
+    margin: 6px 0px;
     font-size: 10px;
     color: rgb(194,198,209);
 }
-.about li:hover{
+.nav-list nav li:hover{
 
     border-bottom: 5px solid red;
 }
 
-/*image slider*/
+/*----------------------image slider----------------------------------*/
+.image-slider{
+  position: relative;
+}
+.image-slider .img-wrapper img
+{
+    width: 100%;
+}
 
-.image{
-    width:100%;
-    
-}
-.body-up{
-    position: relative;
-}
 .upcoming-event{
-    width: 400px;
+    width: 430px;
     height: 100px;
     position: absolute;
-    bottom: 0;
-    right:20;
+    bottom:0;
+    right: 85;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: white;
-
-}
-.right-event{
-    float:right;
-}
-
-.calender> .material-icons{
-    font-size: 30px;
+     color:rgb(24,57,110);
     padding: 20px;
-    color:rgb(24,57,110);
+
 }
-.left-event{
-    float: left;
+
+.calender{
+    float: right;
 }
-.time1{
-    font-size: 10px;
-    padding: 10px; ;
-    float: left;
-    margin:0;
-}
-.date-time .material-icons{
+.calender .material-icons{
+    font-size: 30px;
     
-    font-size: 10px;
+}
+
+.event-schedule{
+    font-size: 11px;
+    float: left;
+    margin-top: 10px;
     color: rgb(137,151,164);
+}
+.event-schedule .material-icons{
+    
+    font-size: 11px;
     padding-right: 5px;
 }
+
 .upcoming-event h2{
-    padding:10px;
-    margin: 0;
+   line-height: 1;
+    font-size: 22px;
     color: rgb(24,57,110);
-    font-weight: 200;
+   }
+.event-schedule span{
+    margin-right: 10px;
 }
-.date-time{
-    margin-left: 5px;
-    color:rgb(137,151,164);
-
-}
-/*BODY
-
-SECTION
-*/
 
 
+/*-------------------------Education-Buieseness-------------------------------------*/
 
 
-.details{
+.education-buieseness{
     
-    width: 100%;
-    height: auto;
+    
     background-color: rgb(243,244,246);
-  overflow: hidden;
-    padding: 90px 0 30px ;
+    margin: 50px 0;
    
 }
 
 
-.text_main{
-        padding-left: 10px;
-        width:500px;
-        float: left;
-
-    
+.education-buieseness .default-wrapper{
+        width:450px    
 }
-.text_main h1{
+.education-buieseness .default-wrapper h2{
     color: rgb(24,57,110);
-        width:70%;
-      margin: 0 0 25px 0;
+      margin-bottom: 25px;
     font-weight: 500;
-    font-size: 32px;
     
 }
 .horizontal-line{
@@ -194,10 +201,8 @@ SECTION
     margin: 0;
 
 }
-.text_main>p{
-        width:100%;
+.education-buieseness .default-wrapper p{
     margin:25px 0 0 0;
-    font-size: 12px;
     color: rgb(100, 117, 135);
      
 }
@@ -206,116 +211,120 @@ SECTION
 
 
 .event{
-   
-   
+   width: 450px;
+   overflow: hidden;
     padding-right: 10px;
     
-    float: right;
-    /*Height of div is 100px so we have 150 px more in bottom direction so i gave margin 75 px from top and bottom*/
     
 }
 
-.box_body{
+.event-box{
     
     width:100px;
     height: 120px;
     float: left;
     background-color: white;
    margin-left: 10px;
-    
+    position: relative;
     border-radius: 5px;
     
 }
 
 
-.box_body>p{
-    
+.event-box>span{
+    display: block;
     text-align: center;
-    margin:0;
-    padding: 10px;
-    color: rgb(24,57,110);
-    
-}
-
-.same{
-    
     font-size: 12px;
-    
+    margin:10px 0;
+    color: rgb(24,57,110);    
 }
 
-.number{
-    
-        font-size: 30px;
-
+.event-box>span:nth-child(3){
+    font-size:30px;    
 }
+
 .line{
     width:100%;
     height: 1px;
     background-color: rgb(221,228,244);
     opacity: 0.4;
-    position: relative;
-    top: 60px;
+    position: absolute;
+    top: 60;
     
 }
 
 .all-button{
     margin:25px 0px;
-    
     padding: 10px;
     border-radius: 5px;
+    font-size: 12px;
     background-color: rgb(237,20,91);
     color: white;
 }
-.course-button{
-    float: right;
-}
-/*low body*/
+/*--------------------------------------last-news--------------------------*/
 
-.Last_news{
-    padding: 0px 10px;
-    overflow: hidden;
+.news-time span{
+    
+  font-size: 12px; 
+    color: rgb(122, 128, 164);
 }
-.left-content{
-    padding-top: 30px;
-    float:left;
+.news-time span:nth-child(2){
+    color: rgb(237,20,91);
 }
 
-.Low-body{
+
+.last-news{
     background-color: rgb(25,30,62);
-    width: 100%;
+    padding: 30px 0;
+}
+.last-news-wrap{
+    width: 330px;
+    margin-right: 20px;
 }
 
-.heading{
+.last-news .section-heading{
 
     width:700px;
     height: auto;
     color: white;
     overflow: hidden;
-   margin: 0 0 20px -10px;
-
+   margin-bottom: 20px;
 
 }
-.heading>p{
+.last-news .section-heading>span{
     float: right;
     text-decoration: underline;
     font-size:12px;
     cursor: pointer;
+    margin-top:20px;
     
 }
-.heading>h1{
+.last-news .section-heading>h2{
     
     font-size: 32px;
     font-weight: 500;
     float: left;
-    margin: 11px;
 
 }
-.heading>img{
-    height: 40px;
-    width: 40px;
-    padding: 0px;    
-    float: left;
-    margin: 10px 0px;
+.last-news .section-heading h2 i{
+    
+    font-size: 32px;
+    
+}
+.news-box p{
+    
+    margin-bottom: 10px;
+}
+.news-box:nth-child(3) p{
+    
+    margin: 10px 0;
+}
+
+.news-box h3{
+    color: white;
+    margin: 10px 0;
+    font-size: 20px;
+    
 }
 .date-box{
     width: 60px;
@@ -323,38 +332,24 @@ SECTION
     border:2px solid white;
     text-align: center;
     float: left;
-    margin: 10px 10px 10px 0;
-}
-    .time-p{
-    font-size: 12px;
-    
+    margin-right: 10px;
 }
 
-.date-box>h1{
-    font-weight: 100;
+
+.date-box>span:nth-child(1){
     font-size: 30px;
-    margin: 10px 0 0 0;
     color: white;
 }
-.date-box>p{
-    font-weight: 100;
-    font-size: 16px;
+.date-box>span:nth-child(2){
     color: white;
-    margin: 10px 0 0 0;
 }
-.time-p{
-    font-size: 12px;
-    color: rgb(122, 128, 164);
-}
-.time-p>span{
-    
-    color: rgb(237,20,91);
-}
+
 .read-more{
     text-decoration: none;
     float: left;
     color: rgb(122, 123,144);
     font-size: 13px;
+    margin: 10px 0;
     
 }
 .read-more div{
@@ -366,22 +361,16 @@ SECTION
     width: 15px;
     height: 15px;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid rgb(100, 117, 135);
     border-radius: 100%;
 }
 .circle>span{
     color: white;
     font-weight: 700;
 }
-.lowbody_box{
-    
-    height: auto;
-    overflow: hidden;
-    
-}
-.lowbody_box1{
+
+.news-box{
     width: 250px;
-    padding:0 15px;
     float: left;        
     
 }
@@ -389,27 +378,23 @@ SECTION
 
 
 
-.lowbody_box1>h2{
-    font-size: 20px;
-    font-weight: 100;
-    margin: 0;
-    color: white;
-    
-}
-.lowbody_box1>p{
+
+.news-box>p{
     color: white;
     width:100%;
     text-align: justify;
     font-size: 12px;
 }
 
-.box3{
-       
-        padding-right: 0px;
+.content>.last-news-wrap{
+           
         width:300px;
 background-color: white;
 float:right;
     position: relative;
+    background-color: white;
+    margin: -30px 0;
+    padding-bottom: 30px;
 }
 
 .video-image{
@@ -420,93 +405,92 @@ float:right;
     height: 160px;
 }
 .play-btn{
-    position: absolute;
-    height: 50px;
-    margin: 10px;
-    top: 90px;
-    left: 230;
+   
+    height: 50px;   
 
 }
 
-.video>h2{
-    margin: 10px;
-    width: 200px;
-    font-weight: 100;
-    font-size: 18px;
+.video-title{
+    width: 280;
+    right: 0;
     position: absolute;
     color: white;
-    top:100;
+    top: 105;
+}
+.video-title h3{
+    width: 200px;
+}
+.content>.last-news-wrap .news-box{
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 25px;
+    
 }
 
-.box3 p , .box3 a{
-    padding:10px;
-    margin: 0;
-}
-.box4>p{
+.content>.last-news-wrap p{
     font-size: 12px;
     color: rgb(100, 117, 135);
 }
 
-.box4>.circle{
+.content>.last-news-wrap .circle{
     
     border: 2px solid rgb(122, 123,144);
     
 }
 
-.box4>.circle>span{
+.content>.last-news-wrap .read-more{
     color: rgb(122, 123,144);
 
 }
 
-/*footer section*/
+/*----------------Courses Search-------------------------------*/
 
-.foot{
+.courses-search{
     width:100%;
     height: auto;
     text-align: center;
     background-color: rgb(243,244,246);
-    padding-bottom: 10px;
+    margin: 50px 0;
+   
 
     
 }
-
-.courses>h1,.courses>p{
-    margin: 0 0 10px 0;
-    padding-top: 0px;
-}
-.courses>h1{
-    padding-top:50px;
-    font-size: 40px;
-    font-weight: 400;
-    color: rgb(24,57,110);
-}
-.courses>p{
-    margin-bottom: 60px;
-    font-size: 18px;
-    color: rgb(186,192,204);
+.courses-search h2{
+           color: rgb(24,57,110);
     
 }
-.search>.text,.search>select{
+.courses-search span{
+    color:rgb(186, 192, 206);
+}
+.search{
+    margin-top: 20px;
+}
+
+.search>input,.search>select{
     width: 250px;
     height: 50px;
     margin-right:15px;
     color: rgb(137,151,164);
-    padding: 0px 10px;
+    padding-left: 10px;
     font-size:11px;
     border: 1px solid rgb(226,226,226);
     
 }
 .search-button{
-    padding: 10px 30px;
+    width: 100px;
+    padding: 10px 0;
+    margin-top: 20px;
 }
-.last>p{
-    font-size: 14px;
-    color: rgb(186,192,204);
-    margin: 0;
+.courses-search p{
+    color: rgb(186, 192, 206);
+    margin: 20px 0 0 0;
     
 }
+
+/*--------------------------Plan Ahead--------------------------*/
+
 .plan{
-    margin: 20px 0;
+    margin-top: 20px;
     width:100%;
     background-image: url(../img/cover-2.jpg);
     background-repeat: no-repeat;
@@ -522,9 +506,10 @@ float:right;
 .plan-text h2{
     color: white;
 }
+
 .plan-text .content p{
 width:600px;
-    margin-top: 10px;
+    margin-top: 20px;
     color: white;
 }
 .plan-text .default-wrapper{
@@ -534,12 +519,82 @@ width:600px;
     position: absolute;
     width:320px;
     height: 320px;
-    top: -70;
+    top: -90;
     right: 0;
-    border-radius: 50%;
+    border-radius: 50%;   
+}
+/*------------------------News-feed-----------------------------------------*/
+.news-bar .news-box{
+float: none;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(236,236,236);
+
+}
+.what-happening{
     
+    margin: 40px 0;
+}
+.what-happening>.default-wrapper{
+    
+    margin-bottom: 20px;
+}
+.news-feed p{
+    color:rgb(100, 117, 135);
+}
+.news-bar{
+    width:300px;
+    padding: 25px;
+    float: left;
+background-color: rgb(25,250,250);
     
 }
+.news-feed h3{
+    color:rgb(23,56,110);
+    font-weight: 100;
+}
+.news-feed h2{
+    color:(23,56,110);
+    font-size:20px;
+}
+.news-main-section{
+padding: 20px;
+    width: 800px;
+    float: right;
+    background-color: white;
+}
+.news-main-section .img-wrapper{
+    float: left;
+    width: 266.6px;
+}
+.recent-image-wrapper{
+margin: 20px -20px
+
+}
+.latest-news-box{
+    float: left;
+    width: 370px;
+    margin-right: 20px;
+}
+.latest-news-box .img-wrapper{
+    width: 100%;
+}
+.latest-news-box:nth-child(3){
+margin:0;
+}
+.latest-news-box .news-box{
+    width:100%;
+}
+.latest-news-box .news-box .news-time{
+    margin-top:20px;
+}
+
+.what-happening .news-time::after{
+content: "";
+    display: block;
+    clear: both;
+}
+/* ----------------------------- news and announcement-----------------------*/
 .news-announcement{
     background-image:url(../img/cover3.jpg);
     color: white;
@@ -558,13 +613,16 @@ width:600px;
     float: left;
     margin-right:40px;
 }
+.announcement-box .read-more{
+    margin: 10px 0;
+}
 .message-box{
     width: 305px;
     padding: 50px 20px;
     margin: -40px 0;
     float: left;
     color: rgb(23,56,110);
-    background-color: white;
+    background-color: rgb(243, 244, 246);
 }
 .message-box .default-wrapper span:first-child{
     float: left;
@@ -572,7 +630,7 @@ width:600px;
     width: 50px;
     padding: 15px 0;
     text-align: center;
-    background-color: red;
+    background-color: rgb(237,20,91);
     color: white;
     font-size: 32px;
     line-height: 1.3;
@@ -586,19 +644,20 @@ width:600px;
 }
 .message-box p{
     margin: 10px 0;
-    color: grey;
+    color: rgb(100, 117, 135)
+    
+}
+.message-box .img-wrapper{
+    margin-top: 10px;
+}
+.message-box .img-wrapper img{
+    width: 100%;
 }
 .announcement-box .img-wrapper{
     margin: 20px 0;
 }
-.announcement-box span{
-    
-  font-size: 12px; 
-    color: rgb(122, 128, 164);
-}
-.announcement-box span:nth-child(2){
-    color: rgb(237,20,91);
-}
+
+
 .announcement-box h3{
     margin-bottom: 10px;
 }
@@ -617,6 +676,10 @@ width:600px;
     font-size:10px;
 }
 
+
+/*------------------------------------Life In Upside----------------------*/
+
+
 .life-in-upside{
 
     padding: 30px 0;
@@ -628,6 +691,7 @@ width:600px;
     width: 275px;
     float: left;
 }
+
 .seperator div{
     width: 200px;
     height: 2px;
@@ -635,8 +699,16 @@ width:600px;
     margin: 0 auto;
 }
 .seperator{
-    margin: 10px;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
 }
+.seperator .material-icons{
+    position: absolute;
+    top: -10;
+    color:rgb(236, 236, 236);
+}
+
 .life-in-upside .default-wrapper{
     margin-top: 20px;
 }
@@ -644,9 +716,12 @@ width:600px;
     color:rgb(186, 192, 206);
 }
 
+/*------------------Customer-Review-------------------*/
+
 .customer-opinion{
     padding: 30px 0;
     background-color: white;
+    
 }
 .customer-opinion h2{
     text-align: center;
@@ -665,6 +740,7 @@ width:600px;
     width: 320px;
     margin-right: 70px;
     float: left;
+    color: rgb(100, 117, 135);
 }
 .review-box:nth-child(3){
     margin-right: 0;
@@ -676,7 +752,8 @@ width:600px;
 }
 .review span{
     position: absolute;
-    bottom: -15;
+
+    bottom: -13;
     color: rgb(236, 236, 236);
 }
 
@@ -782,4 +859,63 @@ padding-left: 10px
 }
 .footer-box:nth-child(3){
     background-color: rgb(31,35,70);
+    
+}
+.footer-box:nth-child(3) h3{
+    margin-bottom: 10px;
+    
+}
+.search-box input{
+    height: 30px;
+    width: 260px
+}
+.search-box{
+    margin-top: 20px;
+    height: 30px;
+}
+.search-box .all-button{
+    margin: 0;
+    padding: 8px;
+    font-size: 10px;
+    background-color: rgb(24,55,110);
+}
+.social-media{
+    margin-top: 20px; 
+}
+.social-media .img-wrapper{
+    width: 45px;
+    float: left;
+    margin: 10px 10px 0 0;
+}
+.social-media .img-wrapper:hover{
+    background-color: white;
+    
+}
+.copyright-info{
+    padding: 20px 0;
+    margin:0 -50px;
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(25, 30, 62);
+    position:relative;
+}
+.copyright-info span i{
+    font-size: 10px;
+}
+.top-scroll-button{
+    width: 40px;
+    padding: 10px 0;
+    border: 1px solid white;
+    position: absolute;
+    top: -20;
+    left: 615;
+}
+.top-scroll-button i{
+font-size: 14px;
+    font-weight: 600;
+}
+
+.top-scroll-button:hover{
+    background-color: white;
+    color:rgb(23,56,110);
 }
