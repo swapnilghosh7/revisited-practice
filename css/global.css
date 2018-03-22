@@ -88,3 +88,6 @@ li{
     background-color: rgb(237,20,91);
     color: white;
 }
+i{
+    vertical-align: middle;
+}
